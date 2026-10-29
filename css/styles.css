@@ -1,0 +1,585 @@
+
+/*pagina de estilos*/
+@font-face {
+    font-family: Lastica;
+    src: url("/fonts/FontsFree-Net-Lastica.ttf");
+}
+@font-face {
+    font-family: TT Interphases;
+    src: url("/fonts/FontsFree-Net-TTInterfaces-Medium.ttf");
+}
+@font-face {
+    font-family: Anonymous Pro;
+    src: url("/fonts/AnonymousPro-Regular.ttf");
+}
+@font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+/*-- Estilos base y rest para toda la pagina --*/
+
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: arial;
+    scroll-behavior: smooth;
+}
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #000000;
+}
+
+/*-- Estilos para el div header / seccion 0 --*/
+
+section.Header {
+    height: 100vh;
+    background-image:  url("/images/sflip.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: "TT Interphases", sans-serif;
+    color: #f5f5f5;
+}
+section.Header > nav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 80px;
+}
+section.Header > nav > h1{
+    font-size: 13.7px; 
+}
+section.Header > header > article{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    position: relative;
+}   
+section.Header > header > article >img.img1{
+    position: absolute;
+    bottom: 20px;
+    transform: rotate(135deg);
+}
+section.Header > header > article >img.img2{
+    position: absolute;
+    left:10px;  
+    top:-50px;
+}
+section.Header > header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+section.Header > header > article > h1{
+    font-family: "Lastica", sans-serif;
+    padding: 80px;
+    font-size: 5.5em;  
+    padding-bottom:0% ;
+}
+section.Header > header > article > h4{
+    font-size: 26px;
+    display: flex;
+    align-self: baseline;
+    padding: 80px;
+    padding-top: 0%;
+}
+
+
+
+/*-- Estilos para seccion 1 --*/
+
+section.seccion1{
+    height: 100vh;
+    background-image:url("/images/s.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-areas: 
+        ". aside main .";
+    justify-content: flex-end;
+}
+section.seccion1>aside{
+    grid-area: aside;
+}
+section.seccion1>main{
+    grid-area: main;
+    color: #f5f5f5;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: column;
+}
+section.seccion1>main>h2{
+    font-family: Lastica;
+    font-size: 4em;
+}
+section.seccion1>main>p{
+    font-family: Anonymous Pro;
+    font-size: 165%;
+
+}
+/*-- Estilos para seccion 2 --*/
+/*-- Lugo --*/
+
+section.seccion2{
+    height: 100vh;
+    background-color: #2C1E4A;
+    background-image:  url("/images/sflip.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section.seccion2 > h2{
+    display: flex;
+    font-family: Lastica;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    /*border: dotted black;*/
+}
+
+section.contenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*border: dotted red;*/
+}
+section.contenido > article{
+    height: 60vh;
+    width: 50vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*border: dotted black;*/
+    display: flex;
+    align-self: center;
+}
+section.contenido > article > section{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 40px;
+    /*justify-content: center;
+    align-content: center;*/
+    background-color: white;
+    /*border: dotted green;*/
+}
+section.contenido > article > section.pregunta{
+    height: 40%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #D73CBE;
+    padding: 40px 40px;
+    /*justify-content: center;
+    align-content: center;*/
+    /*border: dotted rgb(43, 104, 128);*/
+}
+
+/*-- Estilos para seccion 3 --*/
+/*-- Lugo --*/
+
+section.seccion3{
+    height: 100vh;
+    background-image:  url("/images/s.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section.seccion3 > h2{
+    font-family: Lastica;
+    margin-left: 20%;
+    color: white;
+    align-self: flex-start;
+    font-size: xx-large;
+}
+section.seccion3 > section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+}
+section.seccion3 > section > article{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+section.seccion3 > section > article > p{
+    color: white;
+    word-wrap: break-word;
+}
+
+/*-- Estilos para seccion 4 --*/
+
+section.seccion4{
+    height: 100vh;
+  background-image:  url("/images/sflip.jpg");
+    background-size: cover;
+    font-family: "TT Interphases", sans-serif;
+    font-size: 1.3em;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section.seccion4 > section > h2{
+    font-family: "Lastica", sans-serif;
+    font-size: 3.5em;
+}
+section.seccion4 >section> article{
+    display: flex;
+    flex-direction: column;
+    border-color: #f5f5f5;
+    border-style: solid;
+    padding: 20px;
+}
+section.seccion4 > section{
+    justify-self: center;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: column;
+}
+
+section.seccion4 >section> article > h5{
+    color: #D73CBE;
+
+}
+
+/*-- Estilos para seccion 5 --*/
+/*-- Lugo --*/
+
+section.seccion5{
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image:  url("/images/s.jpg");
+    background-size: cover;
+}
+section.seccion5 > section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 70px;
+    align-items: center;
+}
+section.seccion5 > section > article:first-child{
+    display: flex;
+    justify-items: center;
+    padding: 30px;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 35%;
+    border-color: white;
+    border-style: solid;
+}
+section.seccion5 > section > article > button{
+    height: 30px;
+    width: 180px;
+    background-color: #D73CBE;
+    color: white;
+    border-color: #D73CBE;
+    border-radius: 10px;
+}
+article.video{
+    /*imagen atras del video*/
+    background-image: url("/images/pelotagif1.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    min-height: 450px;
+    border: none;
+
+}
+iframe{
+    /*radio al video*/
+    border-radius: 50%;
+}
+
+/*-- Estilos para el Footer --*/
+
+footer{
+    height: 100vh;
+    background-image:  url("/images/sflip.jpg");
+    background-size: cover;
+    color:#f5f5f5;
+    font-family: "TT Interphases", sans-serif;
+    font-size: 18px;
+    display: flex;
+}
+footer > article{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    row-gap: 40px;
+    padding: 20px;
+}
+footer > h3{
+    font-family: "Lastica", sans-serif;
+}
+footer > h2{
+    font-size: 36px;
+}
+footer > h1{
+    font-family: "Inter", sans-serif;
+    font-size: 70px;
+}
+footer > h6{
+    font-family: "Lastica", sans-serif;
+    font-size: 13px; 
+}
+footer > p{
+    font-family: "Lastica", sans-serif;
+}
+footer > h5{
+    font-family: "Lastica", sans-serif;
+    font-size: 12px;
+}
+footer > article > a > button{
+    width: 100%;
+    background-color: transparent;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    border-style: solid;
+}
+@media (max-width: 920px){
+/* Estilos responsive Movile */
+
+/*-- Estilos responsive para el div header --*/
+
+    section.Header{
+        height: 75vh;
+        background-image:  url("/images/s.jpg");
+        background-size: cover;
+    }
+    section.Header > header > article > h1{
+        font-family: "Lastica", sans-serif;
+        font-size: 40px;  
+        padding: 80px;
+        padding-bottom: 0%;
+    }
+   
+
+/*-- Estilos responsive para la seccion 1 --*/
+
+
+    section.seccion1{
+            height: 200vh;
+            background-image:url("/images/s.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-rows: 5% 1fr 5% 1fr 5%;
+            grid-template-columns: 20% 1fr 5%;
+            grid-template-areas: 
+                ". . ."
+                ". aside ."
+                ". . ."
+                ". main ."
+                ". . .";
+        }
+        section.seccion1>aside{
+            grid-area: aside;
+            width: 75%;
+            display: flex;
+            justify-content: center;
+        }
+        section.seccion1>main{
+            grid-area: main;
+            color: #f5f5f5;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        section.seccion1>main>h2{
+            font-family: Lastica;
+            font-size: 5em;
+        }
+        section.seccion1>main>p{
+            font-family: Anonymous Pro;
+            font-size: 165%;
+        }
+
+
+
+/*-- Estilos responsive para la seccion 2 --*/
+/*-- Lugo--*/
+
+    section.seccion2{
+        height: 200vh;
+        background-color: #2C1E4A;
+        background-image:  url("/images/s.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.seccion2 > h2{
+        display: flex;
+        color: white;
+        font-family: Lastica;
+        font-size: 60px;
+        justify-content: center;
+    }
+    
+    section.contenido{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section.contenido > article{
+        height: 50vh;
+        width: 40vh;
+        flex-shrink: 3;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: dotted black;
+        display: flex;
+        align-self: center;
+    }
+    section.contenido > article > section{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    section.contenido > article > section.pregunta{
+        height: 40%;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        background-color: #D73CBE;
+    }
+
+/*-- Estilos responsive para la seccion 3 --*/
+/*-- Lugo--*/
+
+    section.seccion3{
+        height: 200vh;
+        background-image:  url("/images/sflip.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    section.seccion3 > h2{
+        font-family: Lastica;
+        margin-left: 20%;
+        color: white;
+        align-self: flex-start;
+        font-size: xx-large;
+    }
+    section.seccion3 > section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    section.seccion3 > section > article{
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    section.seccion3 > section > article > p{
+        color: white;
+        word-wrap: break-word;
+    }
+
+/*-- Estilos responsive para la seccion 4 --*/
+
+    section.seccion4{
+        height: 100vh;
+        background-image:  url("/images/s.jpg");
+        background-size: cover;
+    }
+    section.seccion4 > section > h2{
+        font-size: 2.5em;
+    }
+
+/*-- Estilos responsive para la seccion 5 --*/
+/*-- Lugo--*/
+
+    section.seccion5{
+        height: 200vh;
+        background-image:  url("/images/sflip.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        background-size: cover;
+    }
+    section.seccion5 > section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        column-gap: 70px;
+        align-items: center;
+    }
+    section.seccion5 > section > article:first-child{
+        display: flex;
+        justify-items: center;
+        padding: 30px;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 35%;
+        border-color: white;
+        border-style: solid;
+    }
+    section.seccion5 > section > article > button{
+        height: 30px;
+        width: 180px;
+        background-color: #D73CBE;
+        color: white;
+        border-color: #D73CBE;
+        border-radius: 10px;
+    }
+    article.video{
+        /*imagen atras del video*/
+        background-image: url("/images/pelotagif1.gif");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        min-height: 450px;
+        border: none;
+    
+    }
+    iframe{
+        /*radio al video*/
+        border-radius: 50%;
+    }
+    
+
+/*-- Estilos responsive para Footer --*/
+
+    footer{
+        height: 70vh;
+        background-image:  url("/images/s.jpg");
+        background-size: cover;
+    }
+    
+
+}
